@@ -1,0 +1,145 @@
+#menu_bar {
+    -fx-background-color: linear-gradient(
+        rgba(80, 80, 80, 0.5) 0%,
+        rgba(110, 110, 110, 0.3) 80%,
+        rgba(150, 150, 150, 0.18) 100%
+    );
+}
+
+.orientation_btn {
+    -fx-min-height: 22;
+    -fx-min-width: 22;
+    -fx-max-height: 22;
+    -fx-max-width: 22;
+}
+
+/*
+    vertical and horizontal for
+    inactive, hover, pressed and active
+*/
+
+.orientation_btn.vertical {
+    -fx-background-image: url("../images/vertical_sheet_active.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 18 22;
+    -fx-background-color: transparent;
+}
+
+.orientation_btn.horizontal {
+    -fx-min-height: 18;
+    -fx-max-height: 18;
+    -fx-background-image: url("../images/horizontal_sheet_active.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 22 18;
+    -fx-background-color: transparent;
+}
+
+.orientation_btn.vertical:hover {
+    -fx-background-image: url("../images/vertical_sheet_hover.png");
+}
+
+.orientation_btn.horizontal:hover {
+    -fx-background-image: url("../images/horizontal_sheet_hover.png");
+}
+
+.orientation_btn.vertical:pressed {
+    -fx-background-image: url("../images/vertical_sheet_pressed.png");
+    -fx-scale-x: 0.8;
+    -fx-scale-y: 0.8;
+    -fx-scale-z: 0.8;
+}
+
+.orientation_btn.horizontal:pressed {
+    -fx-background-image: url("../images/horizontal_sheet_pressed.png");
+    -fx-scale-x: 0.8;
+    -fx-scale-y: 0.8;
+    -fx-scale-z: 0.8;
+}
+
+.orientation_btn.vertical:disabled {
+    -fx-background-image: url("../images/vertical_sheet_inactive.png");
+    -fx-opacity: 1;
+}
+
+.orientation_btn.horizontal:disabled {
+    -fx-background-image: url("../images/horizontal_sheet_inactive.png");
+    -fx-opacity: 1;
+}
+
+/* Fullscreen Button */
+.fullscreen_btn {
+    -fx-min-height: 24;
+    -fx-min-width: 24;
+    -fx-max-height: 24;
+    -fx-max-width: 24;
+
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 22 22;
+    -fx-background-color: transparent;
+}
+
+.fullscreen_btn.windowed{
+    -fx-background-image: url("../images/get_fullscreen.png");
+}
+
+.fullscreen_btn.active{
+    -fx-background-image: url("../images/get_windowed.png");
+}
+
+.fullscreen_btn.windowed:hover {
+    -fx-background-image: url("../images/get_fullscreen_hover.png");
+}
+
+.fullscreen_btn.windowed:pressed {
+    -fx-background-image: url("../images/get_fullscreen_pressed.png");
+}
+
+.fullscreen_btn.active:hover {
+    -fx-background-image: url("../images/get_windowed_hover.png");
+}
+
+.fullscreen_btn.active:pressed {
+    -fx-background-image: url("../images/get_windowed_pressed.png");
+}
+
+/* Pointer Radar Button */
+.pointer_radar_btn {
+    -fx-min-height: 24;
+    -fx-min-width: 24;
+    -fx-max-height: 24;
+    -fx-max-width: 24;
+
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 24 24;
+    -fx-background-color: transparent;
+}
+
+.pointer_radar_btn.active {
+    -fx-background-image: url("../images/pointer_radar_active.png");
+}
+
+.pointer_radar_btn.active:hover {
+    -fx-background-image: url("../images/pointer_radar_active_hover.png");
+}
+
+.pointer_radar_btn.active:pressed {
+    -fx-background-image: url("../images/pointer_radar_active_hover.png");
+    -fx-scale-x: 0.8;
+    -fx-scale-y: 0.8;
+    -fx-scale-z: 0.8;
+}
+
+.pointer_radar_btn.idle {
+    -fx-background-image: url("../images/pointer_radar_idle.png");
+}
+
+.pointer_radar_btn.idle:hover {
+    -fx-background-image: url("../images/pointer_radar_hover.png");
+}
+
+.pointer_radar_btn.idle:pressed {
+    -fx-background-image: url("../images/pointer_radar_hover.png");
+    -fx-scale-x: 0.8;
+    -fx-scale-y: 0.8;
+    -fx-scale-z: 0.8;
+}
