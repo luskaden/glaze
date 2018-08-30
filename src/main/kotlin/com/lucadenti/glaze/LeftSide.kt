@@ -1,19 +1,11 @@
 package com.lucadenti.glaze
 
-import com.sun.deploy.util.ReflectionUtil.instanceOf
-import io.reactivex.Observable
-import javafx.beans.property.SimpleDoubleProperty
 import javafx.geometry.Insets
 import javafx.geometry.Pos
-import javafx.scene.control.Label
 import javafx.scene.layout.StackPane
 import javafx.scene.layout.StackPane.setAlignment
-import javafx.beans.binding.Bindings
-import javafx.geometry.VPos
 import javafx.scene.layout.Pane
-import javafx.scene.text.Font
 import javafx.scene.text.Text
-import javafx.scene.text.TextFlow
 
 object LeftSide {
     // PROPERTIES
